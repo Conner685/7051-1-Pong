@@ -744,6 +744,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &834260806
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299805447461227391, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945020729620799502, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      propertyPath: m_Name
+      value: Paddle 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7945020729620799502, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1303157074}
+    - targetCorrespondingSourceObject: {fileID: 7945020729620799502, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1303157073}
+  m_SourcePrefab: {fileID: 100100000, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
 --- !u!1 &1232119395
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +998,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1303157072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7945020729620799502, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
+  m_PrefabInstance: {fileID: 834260806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1303157073
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303157072}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 118
+  m_CollisionDetection: 0
+--- !u!114 &1303157074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303157072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1cd1856b989654e9afd8d1ffd297e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PaddleController
+  isPlayerOne: 0
+  rb: {fileID: 1303157073}
+  paddleSpeed: 50
 --- !u!1 &1422835307 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7945020729620799502, guid: 5209d9daa5c749d45b7b69fa01e21685, type: 3}
@@ -1555,3 +1665,4 @@ SceneRoots:
   - {fileID: 1904587355}
   - {fileID: 1232119399}
   - {fileID: 307148270}
+  - {fileID: 834260806}
