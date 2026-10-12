@@ -1276,6 +1276,7 @@ MonoBehaviour:
   consolePanel: {fileID: 61325153}
   consoleInput: {fileID: 1959196373}
   gameManager: {fileID: 252076250}
+  terrainColor: {fileID: 2100000, guid: 4df4d15e78131044f9b39d6a9b08e5a0, type: 2}
 --- !u!4 &958670381
 Transform:
   m_ObjectHideFlags: 0

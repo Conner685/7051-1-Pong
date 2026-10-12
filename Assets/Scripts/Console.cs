@@ -1,13 +1,13 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class Console : MonoBehaviour
 {
     [SerializeField] private GameObject consolePanel;
     [SerializeField] private TMP_InputField consoleInput;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private Material terrainColor;
 
     private InputSystem_Actions inputSystem;
     private InputAction console;
@@ -15,6 +15,7 @@ public class Console : MonoBehaviour
 
     void Awake()
     {
+        terrainColor.color = Color.black;
         inputSystem = new InputSystem_Actions();
         console = inputSystem.UI.Console;
         
@@ -77,6 +78,12 @@ public class Console : MonoBehaviour
                 break;
             case "NoAI":
                 gameManager.SetAIActive(false);
+                break;
+            case "SetBlack":
+                terrainColor.color = Color.black;
+                break;
+            case "SetBlue":
+                terrainColor.color = Color.blue;
                 break;
         }
     }
