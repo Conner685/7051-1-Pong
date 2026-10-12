@@ -9,8 +9,11 @@ public class SceneManger : MonoBehaviour
     
     public void StartMatch()
     {
-        int isAi = (aiToggle != null && aiToggle.isOn) ? 1 : 0;
-        PlayerPrefs.SetInt("PlayAgainstAI", isAi);
+        if (aiToggle != null)
+        {
+            int isAi = (aiToggle != null && aiToggle.isOn) ? 1 : 0;
+            PlayerPrefs.SetInt("PlayAgainstAI", isAi);
+        }
         SceneManager.LoadScene(sceneName);
     }
 }

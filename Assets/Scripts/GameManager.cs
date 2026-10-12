@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -20,8 +21,8 @@ public class GameManager : MonoBehaviour
     {
         bool playAgainstAI = PlayerPrefs.GetInt("PlayAgainstAI") == 1;
 
-        Debug.Log(playAgainstAI);
-        
+        SetAIActive(playAgainstAI);
+
         if (playAgainstAI)
         {
             paddleController.enabled = false;
@@ -32,13 +33,13 @@ public class GameManager : MonoBehaviour
             paddleController.enabled = true;
             aiController.enabled = false;
         }
-        
+
         UpdateScoreUI();
         if (gameOverText != null)
         {
             gameOverText.gameObject.SetActive(false);
         }
-        
+
         Time.timeScale = 1f;
     }
 
@@ -62,6 +63,7 @@ public class GameManager : MonoBehaviour
         UpdateScoreUI();
         CheckWinCondition();
     }
+
     public void Player2Scored()
     {
         if (isGameOver) return;
@@ -79,6 +81,28 @@ public class GameManager : MonoBehaviour
         else if (p2Score >= winningScore)
         {
             EndGame("Player 2 Wins!");
+        }
+    }
+
+    public void Reset()
+    {
+        p1Score = 0;
+        p2Score = 0;
+        UpdateScoreUI();
+        isGameOver = false;
+    }
+
+    public void SetAIActive(bool active)
+    {
+        if (active)
+        {
+            paddleController.enabled = false;
+            aiController.enabled = true;
+        }
+        else
+        {
+            paddleController.enabled = true;
+            aiController.enabled = false;
         }
     }
 
